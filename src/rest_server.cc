@@ -1,9 +1,3 @@
-/* 
-   Mathieu Stefani, 07 février 2016
-   
-   Example of a REST endpoint with routing
-*/
-
 #include <algorithm>
 
 #include <pistache/http.h>
@@ -157,6 +151,6 @@ int main(int argc, char *argv[]) {
     ServiceEndpoint service(addr, &mySQLClient);
 
     service.init(thr);
-	cout << "Listending at port " << port << std::endl;
+	cout << "Listening at port " << port << std::endl;
     service.start();
 }
